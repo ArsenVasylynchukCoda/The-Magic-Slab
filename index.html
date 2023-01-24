@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/79a8b115d3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper" id="wrapper">
+        <div class="loader-block">
+            <div class="loader">
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+                <span style="--i:4;"></span>
+                <span style="--i:5;"></span>
+                <span style="--i:6;"></span>
+                <span style="--i:7;"></span>
+                <span style="--i:8;"></span>
+                <span style="--i:9;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+            </div>
+            <div class="count">
+
+            </div>
+        </div>
+        <div class="pop-up">
+            <div class="left-side">
+                <div class="popup-title-box">
+                    <div class="title-left-side">
+                        Contact Information
+                    </div>
+                    <div class="subtitle-left-side">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia deserunt illum praesentium tenetur ullam magni!
+                    </div>
+                </div>
+                <div class="contact-left-side">
+                    <a href="tel:6463943920" class="phone-num-popup"><i class="fa-solid fa-phone"></i>+646-394-3920</a>
+                    <a href="mailto:test@gmail.com" class="email-popup"><i class="fa-regular fa-envelope"></i>test@gmail.com</a>
+                    <a href="https://www.google.com/maps/place/4096+Grove+St,+Ridgewood,+NY+11385,+%D0%A1%D0%A8%D0%90/@40.7091419,-73.90656,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25e9c72800f3f:0xdccacf8cc5c31af3!8m2!3d40.7091379!4d-73.9043713" 
+                    class="adress-popup"><i class="fa-solid fa-location-dot"></i>New York</a>
+                </div>
+                <div class="social-medias-left-side">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="arrows-form">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <form action="#" class="contact-form">
+                    <!-- 1. способ  -->
+                    <div class="form-block">
+                        <div class="form-item">
+                            <label for="first-name">Enter your first name</label>
+                            <input type="text" id="first-name" name="name">
+                            <!-- required minlength="3" maxlength="10" -->
+                            <div class="errors"></div>
+                        </div>
+                        <div class="form-item form-item-pass">
+                            <label for="password">Enter your password</label>
+                            <input type="password" id="password" name="password">
+                            <!-- required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{3,14}" title="Simbols: 3-14, Min: 1 big letter, 1 small letter and 1 number" -->
+                            <i class="fa-solid fa-eye-slash"></i>
+                            <div class="errors"></div>
+                        </div>
+                        <div class="form-item">
+                            <label for="email">Enter your email</label>
+                            <input type="email" id="email" name="email">
+                            <div class="errors"></div>
+                        </div>
+                        <div class="form-item">
+                            <label for="tel">Enter your phone</label>
+                            <input type="tel" id="tel" name="tel">
+                            <!-- required pattern="[0-9]{10, 12}" title="Only numbers without +, Min number count: 10, Max count: 12" -->
+                            <div class="errors"></div>
+                        </div>
+                    </div>
+    
+                    <!-- #634b99 -->
+                    <div class="form-check">
+                        <div class="form-check-title">Some text...</div>
+                        <div class="form-check-block">
+                            <div class="form-check-item">
+                                <input type="checkbox" id="check1" name="check1" value="yes">
+                                <label for="check1">Web Design</label>
+                            </div>
+                            <div class="form-check-item">
+                                <input type="checkbox" id="check2" name="check2" value="yes">
+                                <label for="check2">Web Development</label>
+                            </div>
+                            <div class="form-check-item">
+                                <input type="checkbox" id="check3" name="check3" value="yes">
+                                <label for="check3">Logo Design</label>
+                            </div>
+                            <div class="form-check-item">
+                                <input type="checkbox" id="check4" name="check4" value="yes">
+                                <label for="check4">Other</label>
+                            </div>
+                        </div>
+                        <div class="errors"></div>
+                    </div>
+    
+                    <div class="form-item form-message">
+                        <label for="text">Enter your message</label>
+                        <input type="text" id="mess" name="mess" placeholder="Write your message...">
+                    </div>
+    
+                    <div class="form-file">
+                        <input type="file" id="selectFile" name="selectFile">
+                        <label for="selectFile">Select file</label>
+                    </div>
+                    <!-- 2. способ  -->
+                    <!-- <label>
+                        <input type="text">
+                        Enter your question
+                    </label> -->
+                    <div class="form-btn">
+                        <button type="submit">SEND</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <header class="header">
+            <div class="wrapper-inner">
+                <div class="tuggle-mode">
+                    <input type="checkbox" id="mode">
+                    <label for="mode" class="tuggle-mode-button"><span></span></label>
+                </div>
+                <nav class="header-menu">
+                    <ul class="header-list">
+                        <li class="header-list-item"><a href="#wrapper">menu</a></li>
+                        <li class="header-list-item"><a href="#footer">find us</a></li>
+                    </ul>
+                    <div class="header-logo"><a href="index.html">The Magic Slab</a></div>
+                    <div class="header-list-btn"><button type="button">CONTACT US</button></div>
+                </nav>
+                <div class="adaptive-arrow"><span class="adaptive-arrow-line1"></span><span
+                        class="adaptive-arrow-line2"></span></div>
+                <div class="adaptive-menu-box">
+                    <nav class="adaptive-menu">
+                        <ul class="adaptive-menu">
+                            <li class="header-list-item"><a href="#wrapper">menu</a></li>
+                            <li class="header-list-item"><a href="#footer">find us</a></li>
+                        </ul>
+                        <div class="header-list-btn"><button type="button">CONTACT US</button></div>
+                    </nav>
+                </div>
+            </div>
+            <div class="website-load">
+
+            </div>
+        </header>
+        <div class="banner">
+            <h1 class="main-title"><span>Freshly</span><span>Churned</span><span>Every Day.</span></h1>
+            <div class="swiper icecream-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide rotate"><img src="img/slide1.png" alt="">
+                        <div class="icecream-swiper-text">
+                            <span>Vanilla</span>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide rotate"><img src="img/slide2.png" alt="">
+                        <div class="icecream-swiper-text">
+                            <span>Strawberry</span>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide rotate"><img src="img/slide3.png" alt="">
+                        <div class="icecream-swiper-text">
+                            <span>Esspresso</span>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide rotate"><img src="img/slide4.png" alt="">
+                        <div class="icecream-swiper-text">
+                            <span>Chocolate</span>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide rotate"><img src="img/slide5.png" alt="">
+                        <div class="icecream-swiper-text">
+                            <span>Mint</span>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-next"></div>
+                <div class="button-prev"></div>
+            </div>
+            <div class="feautered">
+                <span class="feautered-text">feautered in</span>
+                <div class="scrolling">
+                    <div class="scrolling-item"><img src="img/sponsor1.png" alt="sponsor"></div>
+                    <div class="scrolling-item"><img src="img/sponsor2.png" alt="sponsor"></div>
+                    <div class="scrolling-item"><img src="img/sponsor3.png" alt="sponsor"></div>
+                    <div class="scrolling-item"><img src="img/sponsor4.png" alt="sponsor"></div>
+                    <div class="scrolling-item"><img src="img/sponsor1.png" alt="sponsor"></div>
+                    <div class="scrolling-item"><img src="img/sponsor2.png" alt="sponsor"></div>
+                    <div class="scrolling-item"><img src="img/sponsor3.png" alt="sponsor"></div>
+                    <div class="scrolling-item"><img src="img/sponsor4.png" alt="sponsor"></div>
+                    <div class="scrolling-item"><img src="img/sponsor1.png" alt="sponsor"></div>
+                    <div class="scrolling-item"><img src="img/sponsor2.png" alt="sponsor"></div>
+                </div>
+            </div>
+        </div>
+        <main class="content">
+            <section class="aboutus">
+                <div class="aboutus-block">
+                    <div class="aboutus-text-block">
+                        <h3 class="aboutus-title">
+                            We only use the highest quality ingredients
+                        </h3>
+                        <div class="aboutus-text">
+                            The Slab is based on a simple, nostalgic idea: paying tribute to the original American ice
+                            cream parlor – built on quality ice cream, delicious toppings and a fun and inviting
+                            experience.
+                        </div>
+                    </div>
+                    <div class="aboutus-img">
+                        <img src="img/icecream_woman.jpg" alt="icecream_woman">
+                    </div>
+                </div>
+                <div class="aboutus-block">
+                    <div class="aboutus-text-block">
+                        <h3 class="aboutus-title">
+                            We only use the highest quality ingredients
+                        </h3>
+                        <div class="aboutus-text">
+                            The Slab is based on a simple, nostalgic idea: paying tribute to the original American ice
+                            cream parlor – built on quality ice cream, delicious toppings and a fun and inviting
+                            experience.
+                        </div>
+                    </div>
+                    <div class="aboutus-img">
+                        <img src="img/icecream_woman.jpg" alt="icecream_woman">
+                    </div>
+                </div>
+                <div class="aboutus-block">
+                    <div class="aboutus-text-block">
+                        <h3 class="aboutus-title">
+                            We only use the highest quality ingredients
+                        </h3>
+                        <div class="aboutus-text">
+                            The Slab is based on a simple, nostalgic idea: paying tribute to the original American ice
+                            cream parlor – built on quality ice cream, delicious toppings and a fun and inviting
+                            experience.
+                        </div>
+                    </div>
+                    <div class="aboutus-img">
+                        <img src="img/icecream_woman.jpg" alt="icecream_woman">
+                    </div>
+                </div>
+                <div class="aboutus-block">
+                    <div class="aboutus-text-block">
+                        <h3 class="aboutus-title">
+                            We only use the highest quality ingredients
+                        </h3>
+                        <div class="aboutus-text">
+                            The Slab is based on a simple, nostalgic idea: paying tribute to the original American ice
+                            cream parlor – built on quality ice cream, delicious toppings and a fun and inviting
+                            experience.
+                        </div>
+                    </div>
+                    <div class="aboutus-img">
+                        <img src="img/icecream_woman.jpg" alt="icecream_woman">
+                    </div>
+                </div>
+            </section>
+            <section class="icereclam">
+                <h2 class="reclam-title">WE MAKE ICE CREAM THE WAY IT USED TO BE.</h2>
+                <div class="icereclam-ticker-block">
+                    <div class="icereclam-ticker-slowly icereclam-ticker">
+                        <div class="icereclam-item">
+                            we make ice cream the way it used to be.
+                        </div>
+                        <div class="icereclam-item">
+                            we make ice cream the way it used to be.
+                        </div>
+                        <div class="icereclam-item">
+                            we make ice cream the way it used to be.
+                        </div>
+                        <div class="icereclam-item">
+                            we make ice cream the way it used to be.
+                        </div>
+                        <div class="icereclam-item">
+                            we make ice cream the way it used to be.
+                        </div>
+                    </div>
+                    <div class="icereclam-ticker-faster icereclam-ticker">
+                        <div class="icereclam-item">
+                            we make ice cream the way it used to be.
+                        </div>
+                        <div class="icereclam-item">
+                            we make ice cream the way it used to be.
+                        </div>
+                        <div class="icereclam-item">
+                            we make ice cream the way it used to be.
+                        </div>
+                        <div class="icereclam-item">
+                            we make ice cream the way it used to be.
+                        </div>
+                        <div class="icereclam-item">
+                            we make ice cream the way it used to be.
+                        </div>
+                    </div>
+                    <div class="icereclam-ticker-slowly icereclam-ticker">
+                        <div class="icereclam-item">
+                            we make ice cream the way it used to be.
+                        </div>
+                        <div class="icereclam-item">
+                            we make ice cream the way it used to be.
+                        </div>
+                        <div class="icereclam-item">
+                            we make ice cream the way it used to be.
+                        </div>
+                        <div class="icereclam-item">
+                            we make ice cream the way it used to be.
+                        </div>
+                        <div class="icereclam-item">
+                            we make ice cream the way it used to be.
+                        </div>
+                    </div>
+                    <div class="icereclam-ticker-faster icereclam-ticker">
+                        <div class="icereclam-item">
+                            we make ice cream the way it used to be.
+                        </div>
+                        <div class="icereclam-item">
+                            we make ice cream the way it used to be.
+                        </div>
+                        <div class="icereclam-item">
+                            we make ice cream the way it used to be.
+                        </div>
+                        <div class="icereclam-item">
+                            we make ice cream the way it used to be.
+                        </div>
+                        <div class="icereclam-item">
+                            we make ice cream the way it used to be.
+                        </div>
+                    </div>
+            </section>
+            <section class="milkshakes">
+                <div class="milkshake-text-block">
+                    <h2 class="milkshakes-title">
+                        <span>NEW</span>
+                        Magic Milkshakes
+                    </h2>
+                    <div class="milkshakes-text">
+                        <p>Two scoops of magic and one of ice cream?</p>
+                        <p>Introducing delicious milkshakes with our real artisan ice cream.</p>
+                    </div>
+                    <div class="milkshakes-try">
+                        <p>try</p>
+                        <p>today</p>
+                    </div>
+                </div>
+            </section>
+            <div class="icecream-info">
+                <div class="wrapper-inner">
+                    <div class="icecream-info-img">
+                        <img src="img/icecream_caramel.png" alt="icecream_caramel">
+                        <div class="icecream-info-img-text">
+                            <p>request a</p>
+                            <p>quote</p>
+                        </div>
+                    </div>
+                    <div class="icecrem-info-text-block">
+                        <div class="icecream-info-title">
+                            <div>Cater</div>
+                            <div>Your</div>
+                            <div>Next</div>
+                            <div class="icecream-info-title-text">Event</div>
+                            <div>With</div>
+                        </div>
+                        <div class="icecrem-info-text">
+                            Too many parties have an un-magical, sad lack of ice cream. The Magic Slab, where ice cream
+                            is handmade with love and attention, is changing that. Come treat your guests or team with
+                            the best ice cream you've ever tasted.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="photo-slider">
+                <h2 class="photo-slider-title">@THEMAGICSLAB</h2>
+                <p class="photo-slider-subtitle">Put the magic in your feed and follow us on Instagram for updates into
+                    our creamy world!</p>
+                <div class="swiper photo">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/icecream_women.jpg" alt="icecream_women"></div>
+                        <div class="swiper-slide"><img src="img/iceceream_girl.jpg" alt="iceceream_girl"></div>
+                        <div class="swiper-slide"><img src="img/icecream2.jpg" alt="icecream2"></div>
+                        <div class="swiper-slide"><img src="img/icecream_women.jpg" alt="icecream_women"></div>
+                        <div class="swiper-slide"><img src="img/iceceream_girl.jpg" alt="iceceream_girl"></div>
+                        <div class="swiper-slide"><img src="img/icecream2.jpg" alt="icecream2"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-photo-prev"></div>
+                    <div class="swiper-photo-next"></div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" id="footer">
+            <div class="wrapper-inner">
+                <h1 class="footer-title">Come See Us</h1>
+                <div class="footer-info-block">
+                    <div class="footer-adress">
+                        <div class="footer-adress-icon">
+                            <a href="https://www.google.com/maps/place/4096+Grove+St,+Ridgewood,+NY+11385,+%D0%A1%D0%A8%D0%90/@40.7091419,-73.90656,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25e9c72800f3f:0xdccacf8cc5c31af3!8m2!3d40.7091379!4d-73.9043713"
+                                target="_blank"><img src="img/location.svg" alt="location"></a>
+                        </div>
+                        <div class="footer-adress-text-block">
+                            <div class="footer-adress-town">
+                                NEW YORK
+                            </div>
+                            <div class="footer-adress-mobile">
+                                <a href="tel:6463943920">646-394-3920</a>
+                            </div>
+                            <div class="footer-adress-street">
+                                <p>4096 Grove Street</p>
+                                <p>Farmingdale, NY 11735</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-adress">
+                        <div class="footer-adress-icon">
+                            <a
+                                href="https://www.google.com/maps/place/N+Virginia+Ave,+Chicago,+IL,+%D0%A1%D0%A8%D0%90/@41.9762536,-87.7051702,17z/data=!3m1!4b1!4m5!3m4!1s0x880fce009a27b2fb:0x2f4f95163fd9ed84!8m2!3d41.9762496!4d-87.7029815"><img
+                                    src="img/location.svg" alt="location"></a>
+                        </div>
+                        <div class="footer-adress-text-block">
+                            <div class="footer-adress-town">
+                                CHICAGO
+                            </div>
+                            <div class="footer-adress-mobile">
+                                <a href="tel:7738983028">773-898-3028</a>
+                            </div>
+                            <div class="footer-adress-street">
+                                <p>1243 Virginia Street</p>
+                                <p>Chicago, IL 60629</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-create-web">
+                    &copy; 2022 by The Magic Slab.
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".icecream-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            centeredSlides: true,
+            navigation: {
+                nextEl: ".button-next",
+                prevEl: ".button-prev"
+            },
+            breakpoints: {
+                425: {
+                    slidesPerView: 2,
+                },
+                650: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 5,
+                },
+            }
+        });
+        var swiper = new Swiper(".photo", {
+            slidesPerView: 1,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            autoplay: true,
+            debugger: true,
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    autoplay: true
+                },
+                475: {
+                    slidesPerView: 2,
+                    navigation: {
+                        nextEl: ".swiper-photo-next",
+                        prevEl: ".swiper-photo-prev"
+                    },
+                    autoplay: false,
+                },
+                650: {
+                    slidesPerView: 2.5,
+                },
+                1024: {
+                    slidesPerView: 3.25,
+                },
+            },
+        });
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
